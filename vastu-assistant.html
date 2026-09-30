@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Vastu Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Digital Vastu Assistant</h1>
+
+</header>
+
+<main>
+
+    <h2>Select a Room</h2>
+
+    <p>
+        Select a room to get traditional Vastu guidance.
+    </p>
+
+    <select id="room">
+
+        <option value="">-- Select Room --</option>
+
+        <option value="Kitchen">Kitchen</option>
+
+        <option value="Bedroom">Bedroom</option>
+
+        <option value="Living Room">Living Room</option>
+
+        <option value="Study Room">Study Room</option>
+
+        <option value="Puja Room">Puja Room</option>
+
+    </select>
+
+    <br><br>
+
+    <input type="button"
+           value="Get Vastu Guidance"
+           onclick="getAdvice()">
+
+    <br><br>
+
+    <div id="result">
+
+        <p>Vastu guidance will appear here.</p>
+
+    </div>
+
+    <br>
+
+    <a href="index.html">
+        <button>Home</button>
+    </a>
+
+    <br><br>
+
+    <a href="home-layout.html">
+        <button>Sample Home Layout</button>
+    </a>
+
+    <br><br>
+
+    <a href="five-elements.html">
+        <button>Five Elements</button>
+    </a>
+
+</main>
+
+<footer>
+
+    <p>Digital Vastu Shastra Assistant</p>
+
+</footer>
+
+
+<script>
+
+function getAdvice() {
+
+    var room = document.getElementById("room").value;
+
+    var result = document.getElementById("result");
+
+
+    if (room == "") {
+
+        result.innerHTML =
+        "<p>Please select a room.</p>";
+
+    }
+
+
+    else if (room == "Kitchen") {
+
+        result.innerHTML =
+        "<h2>Kitchen</h2>" +
+        "<p><b>Traditional Direction:</b> Southeast</p>" +
+        "<p><b>Element:</b> Fire</p>" +
+        "<p>The Southeast direction is traditionally associated with the kitchen because of its connection with the Fire element.</p>" +
+        "<p>Keep the kitchen clean, organized and well ventilated.</p>";
+
+    }
+
+
+    else if (room == "Bedroom") {
+
+        result.innerHTML =
+        "<h2>Bedroom</h2>" +
+        "<p><b>Traditional Direction:</b> Southwest</p>" +
+        "<p>The Southwest direction is traditionally associated with the master bedroom and stability.</p>" +
+        "<p>Keep the sleeping area comfortable, clean and organized.</p>";
+
+    }
+
+
+    else if (room == "Living Room") {
+
+        result.innerHTML =
+        "<h2>Living Room</h2>" +
+        "<p><b>Traditional Direction:</b> North or East</p>" +
+        "<p>The living room is traditionally considered a welcoming and open area of the home.</p>" +
+        "<p>Keep the space clean, well-lit and comfortable.</p>";
+
+    }
+
+
+    else if (room == "Study Room") {
+
+        result.innerHTML =
+        "<h2>Study Room</h2>" +
+        "<p><b>Traditional Direction:</b> East or North</p>" +
+        "<p>East and North are traditionally considered suitable directions for study and learning.</p>" +
+        "<p>A quiet, well-lit and organized study area is traditionally preferred.</p>";
+
+    }
+
+
+    else if (room == "Puja Room") {
+
+        result.innerHTML =
+        "<h2>Puja Room</h2>" +
+        "<p><b>Traditional Direction:</b> Northeast</p>" +
+        "<p>The Northeast direction is traditionally considered suitable for prayer and meditation.</p>" +
+        "<p>Keep the space clean, peaceful and well ventilated.</p>";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
