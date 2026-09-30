@@ -1,0 +1,138 @@
+body {
+    font-family: Arial;
+    background-color: #f5eee3;
+    color: #333333;
+    margin: 0;
+}
+
+
+/* Header */
+
+header {
+    background-color: #8b542b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+header h2 {
+    color: white;
+}
+
+
+/* Main section */
+
+main {
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #7b4b28;
+}
+
+
+/* Buttons */
+
+button {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #8b542b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6f401f;
+}
+
+
+/* Assistant */
+
+select {
+    width: 250px;
+    height: 45px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+input[type="button"] {
+    width: 250px;
+    height: 55px;
+    font-size: 18px;
+    background-color: #8b542b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #6f401f;
+}
+
+
+/* Result */
+
+#result {
+    background-color: white;
+    border: 2px solid #d6c5b1;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+/* Room / Element sections */
+
+.room {
+    background-color: white;
+    border: 2px solid #d6c5b1;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+
+/* Home layout image */
+
+main img {
+    max-width: 90%;
+    height: auto;
+    border: 3px solid #8b542b;
+}
+
+
+/* Reference links */
+
+ul {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    color: #7b4b28;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #8b542b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
